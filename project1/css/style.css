@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+.nav_style{
+    background-color: #fff;
+    box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+}
+.navbar-brand {
+    width: 50px;
+    height: 50px;
+}
+.navbar-nav li a{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #333;
+    position: relative;
+}
+
+.navbar-nav li a:before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    bottom: 50%;
+    width: 0%;
+    height: 3%;
+    background: #ff7230;
+    transition: all 0.3s linear;
+}
+.navbar-nav li a:hover:before{
+    width: 80%;
+}
+.navbar-nav li a:hover{
+    color: #ff7230 !important;
+}
+.navbar-nav .active>.nav-link{
+    color: #ff7230 !important;
+}
+
+@media (max-width: 992px) { 
+    .navbar-nav{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .navbar-nav li a:hover:before{
+        width: 0%;
+    }
+}
+
+/* header style css */
+.header_text{
+    font-size: 20px;
+    color:#8c8c8c;
+    margin-top: 25px;
+}
+
+.header_text2{
+    font-size: 20px;
+    color: #2d3436;
+    margin-bottom: 40px;
+}
+.span_header_text{
+    color: #ff7230;
+}
+.hire_me{
+    width: 150px;
+    height: 40px;
+    background: #ff7230;
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+.about_me{
+    width: 150px;
+    height: 40px;
+    background: #fff;
+    font-size: 20px;
+    color: #ff7230;
+    text-transform: capitalize;
+    outline: none;
+    border: 1px solid #ff7230;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+
+}
+.hire_me:hover{
+    background: #fff;
+    color: #ff7230;
+    border: 1px solid #ff7230;
+}
+.about_me:hover{
+    background: #ff7230;
+    color: #fff;
+}
+.header_mail p{
+    margin-top: 30px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+}
+.header_mail p:nth-child(2){
+    margin-top: -20px;
+}
+.header_img{
+    margin-top: 55px;
+}
+
+/* about section  */
+.about_sec{
+    padding-top: 50px ;
+}
+.main_title h1{
+    font-weight: 500;
+    font-size: 50px;
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+}
+.about_text{
+    margin-top: -30px;
+}
+.about_text h2{
+    font-size: 33px;
+    color: #000;
+    margin-top: -20px;
+    margin-bottom: 25px;
+}
+.about_text h2{
+    font-size: 24px;
+}
+.about_text p{
+    font-size: 24px;
+    color: #000;
+}
+
+/* expert section start  */
+.expert_sec{
+    padding-top: 80px;
+
+}
+.main_title p{
+    font-size: 26px;
+    color: #000;
+    text-align: center;
+}
+.common_div{
+    margin-top: 30px;
+}
+.expert_sec .progress{
+    width: 90%;
+    height: 10px;
+    border-radius: 7px;
+    margin-top: 50px;
+}
+.expert_sec .pb_1{
+    width: 93%;
+    border-radius: 7px;
+    background-color: #ea2148;
+}
+.expert_sec .pb_2{
+    width: 83%;
+    border-radius: 7px;
+    background-color: #ff7230;
+}
+.expert_sec .pb_3{
+    width: 88%;
+    border-radius: 7px;
+    background-color: #0bad2ec9;
+}
+.expert_sec h2{
+    position: relative;
+}
+.expert_h1:after{
+    content: '93%';
+    position: absolute;
+    top: 50px;
+    right: 13%;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+.expert_h2:after{
+    content: '83%';
+    position: absolute;
+    top: 50px;
+    right: 13%;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+.expert_h3:after{
+    content: '88%';
+    position: absolute;
+    top: 50px;
+    right: 13%;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+
+/* our services start  */
+.ourservices{
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+.services_div{
+    padding: 20px 10px 70px 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    position: relative;
+    box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+}
+.services_div:hover{
+    background: #fff;
+    box-shadow: 0 0 4px 1px grey;
+}
+.services_div h1{
+    text-align: center;
+    font-size: 52px;
+    color: #ff7230;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+    background: #ffeee6;
+}
+.services_div:hover h1{
+    background: rgb(250, 249, 249);
+    border: 1px solid #ff7230;
+}
+.fa-heart{
+    color: rgb(243, 207, 207);
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+}
+.fa-dot-circle{
+    color: #ff7230;
+}
+
+.services_div:hover .fa-heart{
+    color: #ff7230;
+}
+.services_div li{
+    list-style: none;
+    font-size: 23px;
+    color: #000000;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+
+/* hire me section  */
+.hireme_section{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+    background-image: linear-gradient(rgba(5, 5, 5, 0.7), rgba(7, 7, 7, 0.7)),url(../images/background.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.hireme_section h1{
+    font-size: 40px;
+    color: #ff7230;
+}
+.hireme_section p{
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.hireme_section h3{
+    font-size: 30px;
+    color: #fff;
+    margin-top: -40px;
+    padding-bottom: 30px;
+}
+
+/* contact me css */
+.contact_img img{
+    position: absolute;
+    left: -50;
+}
+.contactme_section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+/* contact share div  */
+.contact_share_div{
+    padding: 20px;
+    align-content: center;
+    border-radius: 30px;
+    background: #f7ebeb;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+.contact_share_div:hover{
+background-color: #fff;
+border: 2px solid #ff7230;
+filter: drop-shadow(2px 0px 8px rgba(0,0,0,0.5));
+}
+
+
+/* socialsite links bottom  */
+.socialsites_links .fa-facebook{
+    color: #3b5998;
+}
+.socialsites_links .fa-instagram{
+    color: #e4405f;
+}
+.socialsites_links .fa-pinterest{
+    color: #bd081c;
+}
+.socialsites_links .fa-twitter{
+    color: #00acee;
+}
+@media(max-width:760px){
+.socialsites_links{
+    margin-bottom: 20px;
+}
+}
+
+/* footer  */
+footer{
+    width: 100%;
+    line-height: 50px;
+    color: #fff;
+    background: #ff7230;
+}
+footer p{
+    margin: 0;
+}
+
+@media(max-width:992px){
+.main_title h1{
+    font-size: 40px;
+}
+.main_title p{
+    font-size: 18px;
+}
+.about_text{
+    margin-top: 30px;
+}
+.about_text p{
+    font-size: 17px;
+    line-height: 1.5;
+}
+.about_text h2{
+    font-size: 26px;
+    font-weight: bold;
+}
+.contact_img img{
+    display: none;
+}
+.contact_resp{
+    margin: auto;
+}
+.contact_form{
+    margin: auto;
+}
+}
+
+
+
